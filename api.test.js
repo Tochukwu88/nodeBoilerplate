@@ -1,6 +1,5 @@
-const { TestWatcher } = require('jest');
 const request = require('supertest');
-const { app, authinstance } = require('./app');
+const { app } = require('./app');
 
 describe('POST /register', () => {
   describe('given  name,email,password', () => {
