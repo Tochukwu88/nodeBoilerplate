@@ -28,5 +28,5 @@ app.listen(port, () => {
 });
 module.exports = {
   app,
-  authinstance,
+  auth,
 };
