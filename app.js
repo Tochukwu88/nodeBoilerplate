@@ -3,8 +3,8 @@ const app = express();
 const mongoose = require('mongoose');
 const morgan = require('morgan');
 const authRoutes = require('./routes/auth');
-const authsys = require('./controllers/auth');
-const authinstance = new authsys();
+const Authsys = require('./controllers/auth');
+const authinstancee = new Authsys();
 require('dotenv').config();
 mongoose
   .connect(process.env.MONGOOSE_DEV_DB, {
@@ -28,5 +28,5 @@ app.listen(port, () => {
 });
 module.exports = {
   app,
-  authinstance,
+  authinstancee,
 };
