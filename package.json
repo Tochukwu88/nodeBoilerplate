@@ -33,7 +33,8 @@
     "supertest": "^6.1.3"
   },
   "lint-staged": {
-    "*.{js}": "eslint  --fix ",
-    "*.js": "prettier --write "
+  
+    "*.js": "prettier --write ",
+    "*.{js}": "eslint  --fix "
   }
 }
